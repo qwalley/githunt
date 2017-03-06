@@ -28,7 +28,9 @@ body {
     padding-top: 1px;
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
-    background: #ECE1E1;
+    background-image: url("../img/DSC_3435.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     color: #333;
 }
 
@@ -36,17 +38,25 @@ a {
     text-decoration: none;
     color: #333;
 }
+div.browse {
+    padding-top: 20px;
+}
+
+.text-secondary {
+    color: #333;
+    font-size: 25px;
+    font-weight: bold;
+    text-shadow: 4px, 4px, 10px, #ffffff;
+}
 
 .btn {
     font-size: 15px;
     font-weight: normal;
-    padding: 8px 12px;
-    border: 2px solid #333;
-    color: #333;
+    padding: 10px 20px;
     margin: 0 5px;
+    border-radius: 3px;
+    color: #333;
     background: white;
-    box-shadow: 2px 2px #333;
-    outline: none;
 }
 
 .quote-item a {
@@ -86,17 +96,14 @@ div.container {
 }
 
 .top-header {
+    text-align: center;
     padding-top: 30px;
-}
-
-.brand {
-    float: left;
-    text-align: left;
 }
 
 .brand h1 {
     font-size: 40px;
     margin-bottom: 5px;
+    text-shadow: 2px 2px 10px #ffffff;
 }
 
 .brand p {
@@ -109,11 +116,6 @@ div.container {
     clear: both;
     content: ' ';
     display: block;
-}
-
-.top-nav {
-    float: right;
-    line-height: 80px;
 }
 
 .main-content {
@@ -195,6 +197,8 @@ div.footer span.footer-stat {
     font-weight: normal;
     font-size: 16px;
     text-align: center;
+    color: #000000;
+    text-shadow: 1px 1px 4px #ffffff;
 }
 
 h1.date-head:first-letter {

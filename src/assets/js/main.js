@@ -38,7 +38,6 @@ function HubTab() {
      */
     function generateReposHtml(repositories, lowerDate, upperDate) {
         var html = '';
-        var i = 1;
 
         $(repositories).each(function (index, repository) {
             // Make the name and description XSS safe
@@ -47,9 +46,6 @@ function HubTab() {
 
             if(repFullDesc === '') {
                 repFullDesc = '<i>No description or website provided</i>';
-            }
-            if ((i - 1) % 3 == 0) {
-                html += '<div class="row">';
             }
             html += '<div class="col-md-4 content-item">' +
                 '<div class="header"><a href="' + repository.html_url + '">' + repFullName + '</a></div>' +
@@ -69,9 +65,6 @@ function HubTab() {
                 '</span>' +
                 '</div>' +
                 '</div>';
-            if (i % 3 == 0) {
-                html += '</div>'
-            }
         });
 
         var humanDate = moment(lowerDate).fromNow(),

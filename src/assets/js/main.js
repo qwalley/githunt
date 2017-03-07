@@ -47,7 +47,8 @@ function HubTab() {
             if(repFullDesc === '') {
                 repFullDesc = '<i>No description or website provided</i>';
             }
-            html += '<div class="col-md-4 content-item">' +
+            html += '<div class="col-md-4">' +
+                '<div class="content-item">' +
                 '<div class="header"><a href="' + repository.html_url + '">' + repFullName + '</a></div>' +
                 '<p class="tagline">' + repFullDesc + '</p>' +
                 '<div class="footer">' +
@@ -63,6 +64,7 @@ function HubTab() {
                 '<i class="fa fa-star-o"></i>' +
                 repository.stargazers_count +
                 '</span>' +
+                '</div>' +
                 '</div>' +
                 '</div>';
         });

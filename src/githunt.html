@@ -2,61 +2,59 @@
 <html lang=en-us>
 <head>
 <!-- Bootstrap stuff -->
-    <meta charset=UTF-8>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-
-    <title>New Tab</title>
-    <link rel=stylesheet href=assets/css/main.css>
-    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="assets/css/font-awesome.min.css"/>
-    <link href=assets/css/bootstrap.min.css rel=stylesheet>
+      <title>New Tab</title>
+      <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+      <link href=assets/css/bootstrap.css rel=stylesheet>
+      <link rel=stylesheet href=assets/css/main.css>
 </head>
 <body>
 <div class=main>
       <header>
             <div class="container top-header">
                   <div class="row">
-                        <div class="col-md-3">
-                              <a href="https://soundcloud.com">
+                        <div class="col-sm-3">
+                              <a href="https://stackoverflow.com/">
                                     <span class="fa-stack fa-4x">
-                                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                                        <i class="fa fa-soundcloud fa-stack-1x fa-inverse"></i>
+                                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                                        <i class="fab fa-stack-overflow fa-stack-1x fa-inverse"></i>
                                     </span>
                               </a>
-                              <h4 class="text-secondary">Soundcloud</h4>
+                              <h4 class="text-secondary">Stack Overflow</h4>
                         </div>
-                        <div class="col-md-3">      
-                              <a href="https://play.spotify.com/collection">
-                                    <span class="fa-stack fa-4x">
-                                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                                        <i class="fa fa-spotify fa-stack-1x fa-inverse"></i>
-                                    </span>
-                              </a>
-                              <p class="text-secondary">Spotify</p>
-                        </div>
-                        <div class="col-md-3">
+                        <div class="col-sm-3">
                               <a href="https://github.com">
                                     <span class="fa-stack fa-4x">
-                                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                                        <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                                        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
                                     </span>
                               </a>
                               <h4 class="text-secondary">Github</h4>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-sm-3">
                               <a href="https://onq.queensu.ca">
                                     <span class="fa-stack fa-4x">
-                                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                                        <i class="fa fa-graduation-cap fa-stack-1x fa-inverse"></i>
+                                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                                        <i class="fas fa-school fa-stack-1x fa-inverse"></i>
                                     </span>
                               </a>
                               <h4 class="text-secondary">OnQ</h4>
                         </div>
+                        <div class="col-sm-3">      
+                              <a href="https://my.queensu.ca">
+                                    <span class="fa-stack fa-4x">
+                                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                                        <i class="fas fa-graduation-cap fa-stack-1x fa-inverse"></i>
+                                    </span>
+                              </a>
+                              <h4 class="text-secondary">Solus</h4>
+                        </div>
                   </div>
                   <div class="row">
-                        <div class="browse col-lg-12">
+                        <div class="browse align-right col-sm-6">
                               <label class="btn-select btn" for="date-jump">
                                     <select name="date-jump" id="date-jump" class="repos-filter">
                                           <option value="week" selected>Weekly</option>
@@ -65,6 +63,8 @@
                                     </select>
                                     <i class="fa fa-caret-down"></i>
                               </label>
+                        </div>
+                        <div class="browse align-left col-sm-6">
                               <label class="btn-select btn" for="language">
                                 <select name="language" id="language" class="repos-filter">
                                     <option value="">All Languages</option>

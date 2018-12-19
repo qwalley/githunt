@@ -48,24 +48,30 @@ function HubTab() {
                 repFullDesc = '<i>No description or website provided</i>';
             }
             html += '<div class="col-md-4">' +
-                '<div class="content-item">' +
-                '<div class="header"><a href="' + repository.html_url + '">' + repFullName + '</a></div>' +
-                '<p class="tagline">' + repFullDesc + '</p>' +
-                '<div class="footer">' +
-                '<span class="footer-stat">' +
-                '<i class="fa fa-code-fork"></i>' +
-                repository.forks_count +
-                '</span>' +
-                '<span class="footer-stat">' +
-                '<i class="fa fa-commenting-o"></i>' +
-                repository.open_issues +
-                '</span>' +
-                '<span class="footer-stat">' +
-                '<i class="fa fa-star-o"></i>' +
-                repository.stargazers_count +
-                '</span>' +
-                '</div>' +
-                '</div>' +
+                    '<div class="content-item">' +
+                        '<div class="header"><a href="' + repository.html_url + '">' + repFullName + '</a></div>' +
+                        '<p class="tagline">' + repFullDesc + '</p>' +
+                        '<div class="footer">' +
+                            '<span class="footer-stat">' +
+                                '<i class="fas fa-code-branch"></i>' +
+                                '<span class="icon-text">' +
+                                    repository.forks_count +
+                                '</span>' +
+                            '</span>' +
+                            '<span class="footer-stat">' +
+                                '<i class="fas fa-comment-alt"></i>' +
+                                '<span class="icon-text">' +
+                                    repository.open_issues +
+                                '</span>' +
+                            '</span>' +
+                            '<span class="footer-stat">' +
+                                '<i class="fas fa-star"></i>' +
+                                '<span class="icon-text">' +
+                                    repository.stargazers_count +
+                                '</span>' +
+                            '</span>' +
+                        '</div>' +
+                    '</div>' +
                 '</div>';
         });
 
@@ -73,7 +79,7 @@ function HubTab() {
             formattedLower = moment(lowerDate).format('ll'),
             formattedUpper = moment(upperDate).format('ll');
 
-        var finalHtml = '<div class="col-md-12"><h1 class="date-head" data-date="' + lowerDate + '">' + humanDate + ' - ' + formattedLower + ' &ndash; ' + formattedUpper + '</h1></div>' + html + '<div class="clearfix"></div>';
+        var finalHtml = '<div class="col-md-12"><h1 class="date-head" data-date="' + lowerDate + '">' + formattedLower + ' &ndash; ' + formattedUpper + '</h1></div>' + html + '<div class="clearfix"></div>';
 
         return finalHtml;
     }

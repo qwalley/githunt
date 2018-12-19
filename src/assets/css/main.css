@@ -130,16 +130,16 @@ div.browse {
 }
 
 .main-content {
-    margin-top: 80px;
+    /*margin-top: 80px;*/
 }
 
 .content-item {
     position: relative;
-    padding: 15px;
-    height: 200px;
+    padding: 8px 12px;
+    /*height: 200px;*/
     background: #fefefe;
     margin: 0 0 20px 0px;
-    border-radius: 4px;
+    border-radius: 3px;
     box-shadow: none;
     color: #333;
     overflow: hidden;
@@ -148,7 +148,7 @@ div.browse {
 .content-item .header {
     font-weight: bold;
     font-size: 17px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     overflow-wrap: break-word;
     width: 100%;
 }
@@ -156,15 +156,15 @@ div.browse {
 .content-item p.tagline {
     font-size: 13px;
     line-height: 20px;
-    overflow: scroll;
+    overflow-y: hidden;
     -webkit-line-clamp: 6;
     -webkit-box-orient: vertical;
-    height: 60%;
+    max-height: 100px;
+    margin: 0px;
 }
 
 .content-item .footer {
-    position: absolute;
-    bottom: 12px;
+    margin-top: 5px;
 }
 
 div.footer span.footer-stat {
@@ -199,13 +199,11 @@ div.footer span.footer-stat {
 }
 
 .date-head {
-    margin: -40px 20px 40px 0;
-    padding: 8px 0px 8px 10px;
+    margin: 15px 0px 8px 0px;
     font-weight: normal;
-    font-size: 16px;
+    font-size: 14px;
     text-align: center;
-    color: #000000;
-    text-shadow: 1px 1px 4px #ffffff;
+    color: #ddd;
 }
 
 h1.date-head:first-letter {
@@ -249,4 +247,8 @@ div.footer span.footer-stat .fa {
 .align-right {
     text-align: -webkit-right;
     text-align: right;
+}
+
+.icon-text {
+    margin: 0px 3px;
 }
